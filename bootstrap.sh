@@ -1,4 +1,5 @@
 #!/bin/bash
+kind create cluster --config cluster.yml
 
 kubectl apply -f .infrastructure/clusterIp.yml
 kubectl apply -f .infrastructure/statefulSet.yml
